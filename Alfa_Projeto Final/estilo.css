@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&family=Overlock:wght@400;700&display=swap');
+
+*{
+	margin:0; padding:0;}
+
+nav{
+background-color: #098D62;
+text-align: center;
+padding: 20px;
+}
+
+header, img{
+    width:100%;
+	height:400px;
+}
+
+a{
+   font:  1.2rem Exo, sans-serif; 
+   color: white;
+   text-decoration: none;
+}
+
+.a-menu{
+  margin-right: 100px; 	
+}
+
+.a-menu:hover, .a-menu:active{
+color: #FFF;
+}
+
+.a-menu:link, .a-menu:visited{
+color: #FFF
+}
+
+#pag-sobre{
+	background-color: white;
+}
+
+article{
+width: 50%;
+height: 100%;
+background-color: #098D62;
+padding: 20px;
+box-sizing: border-box;
+border-radius: 15px;
+float: left;
+position: relative;
+top: 130px;
+margin-bottom: 20vh;
+}
+
+article p{
+	color: white;
+text-align: center;
+}
+
+aside{
+	width: 50%;
+	height:450;
+	background-color: white;
+	float: left; 
+}
+
+h1{
+	padding-bottom: 10px;
+	font: 2.5rem Exo, cursive;
+	color: #098D62;
+	text-align: center;
+	padding-top: 50px;
+	font-weight: bold;
+}
+
+p{
+	font: 1.2rem Exo, sans-serif;
+	color:#777;
+	text-align: justify;
+	text-indent: 20px;
+	line-height: 25px;
+}
+
+section{
+padding: 20px;
+}
+
+h2{
+    font:2rem Exo, cursive;
+	color: #098D62;
+	padding-bottom: 30px;
+	text-align: center;
+  }
+
+  .container{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top:15px;
+	margin-bottom:20px;
+	margin-left: 100px;
+}
+
+.card{
+	background-color:#098D62;
+	margin:10px;
+	width: 90%;
+	border-radius:20px;
+	box-shadow: 9px 9px 9px #757575;
+	transition: 0.2s;
+}
+
+.card:hover{
+	box-shadow: 12px 12px 16px #757575;
+}
+
+.card-content{
+	padding:8px;
+
+}
+
+.card-content p{
+
+	font: 1.1rem Exo, sans-serif;
+	line-height: 20px;
+	text-align: center;
+	color: white;
+	}
+
+.pag-contatos {
+margin-bottom: 40px;
+}	
+
+.pag-contatos h2 {
+	text-align: left;
+	text-indent: 20px;
+	}
+
+.contatos{
+	bottom: 215px;
+}
+
+
+h3{
+    font-family: Exo, sans-serif;
+    font-size: 3rem;  
+    text-align: center;
+    color: #098D62;
+    padding: 20px;
+}
+
+h4{
+	padding-bottom: 10px;
+	font: 2.5rem Exo, cursive;
+	color: white;
+	text-align: center;
+	padding-top: 50px;
+}
+
+h5{
+	padding-bottom: 10px;
+	font: 1.25rem Exo, cursive;
+	color: black;
+	text-align: center;
+	padding-top: 50px;
+}
+
+form{
+    width: 600px;
+    margin: auto;
+}
+
+input, textarea, select{
+    font-family: Exo, cursive;
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #757575;
+}
+
+label, fieldset{
+    font-family: Exo, cursive;
+    font-size: 20px;    
+}
+
+fieldset{
+	border: 1px solid #757575;
+	margin-bottom: 15px;
+}
+
+.botões-form{
+	display: flex;
+    justify-content: center;
+}
+
+input[type="submit"], input[type="reset"]{
+	margin: 15px;
+	height: 40px;
+	border: 0;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #757575;
+	background-color: #43a047;
+	font-family: Exo, cursive;
+	font-size: 20px;
+}
+
+input[type="reset"]{
+	background-color: #c62828;
+}
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+
+textarea{
+    height: 70px;
+}
+
+
+input[type="number"]{
+    width: auto;
+    height: 30px;
+}
+
+#tabela{
+	visibility: hidden;
+	width: 80%;
+	padding: 20px;
+	margin: auto;
+}
+
+th{
+	text-align: center;
+	color: white;
+	background-color: #263238;
+	padding: 10px;
+	font-family: Exo, cursive;
+    font-size: 20px;
+}
+
+td{
+	text-align: center;
+	color: white;
+	padding: 20px;
+	background-color: #607d8b;
+	font-family: Exo, cursive;
+    font-size: 20px;
+}
+
+
+footer{
+    padding: 20px;
+    background-color: #098D62;
+    font-family: Exo, cursive;
+    font-size: 25px;
+}
+
+footer a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+
+footer a:hover{
+    color:black ;
+}
+
+@media only screen and (max-width: 1024px) {
+	body {
+	  background-color: lightblue;
+	}
+  }
+  

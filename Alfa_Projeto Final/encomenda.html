@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Rede Alfa</title>
+
+</head>
+<body>
+<header>
+            <img src="img/banner.png" alt="banner contendo a logo da Rede Alfa"/>
+      </header>
+      <nav>
+           <a  class="a-menu" href="index.html#pag-sobre"> HOME </a>
+           <a  class="a-menu" href="index.html#pag-contatos"> CONTATOS </a>
+           <a  class="a-menu" href="index.html#pag-produtos"> PRODUTOS </a>
+           <a  class="a-menu" href="#"> ENCOMENDAS </a>
+      </nav>
+    <h1> Encomendas</h1> 
+
+    <form id="formulario">
+
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" name="nome completo" size="80" placeholder="Digite seu nome completo" required /> <br/>
+    
+        <label for="celular">Telefone:</label>
+        <input id="celular" type="text" name="celular" size="80" placeholder="(00) 12345-6789"  required /> 
+
+        <label for="email">E-mail:</label>
+        <input id="email" type="email" name="email" size="80" placeholder="nomeusuário@gmail.com"  required />
+
+        <label for="nome">Endreço:</label>
+        <input id="endr" type="text" name="endereço" size="80" placeholder="Digite seu endereço" required />
+    
+        <label for="Produto">Produto:</label>
+
+        <select id="slct" required >
+
+            <option>Passagens para a Disney</option>
+            <option>Passagens para Londres</option>
+            <option>Passagens para Pequim</option>
+            <option>Passagens para o Rio de Janeiro</option>
+            <option>Passagens para Washington</option>
+            <option>Passagens para Brasília</option>
+            <option>Passagens para Nova York</option>
+            <option>Passagens para Qatar</option>
+
+        </select><br>
+
+       
+    
+        <label for="quantidade">Quantidade:</label>
+        <input id="quantidade" type="number" name="quantidade" size="80" min="1" max="10" step="1"/>
+    
+    <fieldset>
+
+        <legend>Forma de Entrega:</legend>
+        <input type="radio" name="retirada" value="Receba em Casa" id="rec"> <label>Receba a passagem em Casa</label><br> 
+        <input type="radio" name="retirada" value="Retire na Loja" id="rnl"> <label>Receba a passagem Digital</label>
+    </fieldset>
+    
+        <label for="msg" >Observações:</label>
+        <textarea id="msg" cols="80" rows="4"></textarea>
+    
+    <div id="botões-form">
+        <input type="submit" name="Encomendar" value="Encomendar" />
+        <input type="reset" name="Cancelar" value="Cancelar" />
+    </div>
+    </section>
+    </form>
+
+    <div id="resultado"> 
+        <table id="tabela">
+        
+        <tr>
+            <th>Nome</th> 
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Endereço</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Entrega</th>
+
+        </tr>
+
+        <tr> 
+            <td id="l1"></td>
+            <td id="l2"></td>
+            <td id="l3"></td>
+            <td id="l4"></td>
+            <td id="l5"></td>
+            <td id="l6"></td>
+            <td id="l7"></td>
+
+        </tr>
+        
+
+    </table>
+    </div>
+
+    <footer>     
+        <p> ©️  Desenvolvido por <a href="http://instagram.com/samara_hls" target="_blank"> Samara de Sá </a> - 2023 </p> 
+    </footer>
+
+     <script src="logica.js"> </script>
+    
+</body>
+</html>
